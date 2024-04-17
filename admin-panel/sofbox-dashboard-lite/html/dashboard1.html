@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Admin Panel | Vehicle Universe</title>
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="images/favicon.ico" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Typography CSS -->
+      <link rel="stylesheet" href="css/typography.css">
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="css/responsive.css">
+   </head>
+   <body>
+      <!-- loader Start -->
+      <div id="loading">
+         <div id="loading-center">
+            <div class="loader">
+               <div class="cube">
+                  <div class="sides">
+                     <div class="top"></div>
+                     <div class="right"></div>
+                     <div class="bottom"></div>
+                     <div class="left"></div>
+                     <div class="front"></div>
+                     <div class="back"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- loader END -->
+      <!-- Wrapper Start -->
+      <div class="wrapper">
+      <!-- Sidebar  -->
+      <div class="iq-sidebar">
+            <div class="iq-sidebar-logo d-flex justify-content-between">
+               <a href="dashboard1.html">
+               <img src="images/logo.png" class="img-fluid" alt="">
+               <span>VUniverse</span>
+               </a>
+               <div class="iq-menu-bt align-self-center">
+                  <div class="wrapper-menu">
+                     <div class="line-menu half start"></div>
+                     <div class="line-menu"></div>
+                     <div class="line-menu half end"></div>
+                  </div>
+               </div>
+            </div>
+            <div id="sidebar-scrollbar">
+               <nav class="iq-sidebar-menu">
+                  <ul id="iq-sidebar-toggle" class="iq-menu">
+                     <li class="iq-menu-title"><i class="ri-separator"></i><span>Главна</span></li>
+                     <li class="active">
+                        <li>
+                           <a href="#dashboard" class="iq-waves-effect collapsed"  data-toggle="collapse" aria-expanded="false"><i class="ri-home-4-line"></i><span>Dashboard</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                           <ul id="dashboard" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                              <li><a href="dashboard1.html">Начална страница</a></li>
+                           </ul>
+                        </li>
+                     </li>
+                     <li>
+                        <a href="#mailbox" class="iq-waves-effect collapsed"  data-toggle="collapse" aria-expanded="false"><i class="ri-mail-line"></i><span>Email</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                        <ul id="mailbox" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                           <li><a href="app/index.html">Входящи</a></li>
+                           <li><a href="app/email-compose.html">Създаване на имейл</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="#user-info" class="iq-waves-effect collapsed"  data-toggle="collapse" aria-expanded="false"><i class="ri-user-line"></i><span>User</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                        <ul id="user-info" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                           <li><a href="profile.html">Потребителски профил</a></li>
+                           <li><a href="profile-edit.html">Редактиране на потребител</a></li>
+                           <li><a href="add-user.html">Добавяне на потребител</a></li>
+                           <li><a href="user-list.html">Списък на потребители</a></li>
+                        </ul>
+                     </li>
+                     <li class="iq-menu-title"><i class="ri-separator"></i><span>Components</span></li>                    
+                     <li>
+                        <a href="#tables" class="iq-waves-effect collapsed"  data-toggle="collapse" aria-expanded="false"><i class="ri-table-line"></i><span>Table</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                        <ul id="tables" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                           <li><a href="data-table.html">Data Table</a></li>
+                           <li><a href="table-editable.html">Editable Table</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="p-3"></div>
+            </div>
+         </div>
+      <!-- TOP Nav Bar -->
+      <div class="iq-top-navbar">
+         <div class="iq-navbar-custom">
+            <div class="iq-sidebar-logo">
+               <div class="top-logo">
+                  <a href="dashboard1.html" class="logo">
+                  <img src="images/logo.png" class="img-fluid" alt="">
+                  <span>Sofbox</span>
+                  </a>
+               </div>
+            </div>
+            <div class="navbar-breadcrumb">
+               <h5 class="mb-0">Административно табло</h5>
+               <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                     <li class="breadcrumb-item"><a href="dashboard1.html">Начало</a></li>
+                     <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                  </ol>
+               </nav>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="ri-menu-3-line"></i>
+                  </button>
+                  <div class="iq-menu-bt align-self-center">
+                     <div class="wrapper-menu">
+                        <div class="line-menu half start"></div>
+                        <div class="line-menu"></div>
+                        <div class="line-menu half end"></div>
+                     </div>
+                  </div>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav ml-auto navbar-list">
+                        <li class="nav-item">
+                           <a class="search-toggle iq-waves-effect" href="#"><i class="ri-search-line"></i></a>
+                           <form action="#" class="search-box">
+                              <input type="text" class="text search-input" placeholder="Type here to search..." />
+                           </form>
+                        </li>
+                        <li class="nav-item iq-full-screen"><a href="#" class="iq-waves-effect" id="btnFullscreen"><i class="ri-fullscreen-line"></i></a></li>
+                     </ul>
+                  </div>
+                  <ul class="navbar-list">
+                     <li>
+                        <a href="#" class="search-toggle iq-waves-effect bg-primary text-white"><img src="images/user/1.jpg" class="img-fluid rounded" alt="user"></a>
+                        <div class="iq-sub-dropdown iq-user-dropdown">
+                           <div class="iq-card shadow-none m-0">
+                              <div class="iq-card-body p-0 ">
+                                 <div class="bg-primary p-3">
+                                    <h5 class="mb-0 text-white line-height">Здравей, Nik jone</h5>
+                                    <span class="text-white font-size-12">Налично</span>
+                                 </div>
+                                 <a href="profile.html" class="iq-sub-card iq-bg-primary-hover">
+                                    <div class="media align-items-center">
+                                       <div class="rounded iq-card-icon iq-bg-primary">
+                                          <i class="ri-file-user-line"></i>
+                                       </div>
+                                       <div class="media-body ml-3">
+                                          <h6 class="mb-0 ">Моят профил</h6>
+                                          <p class="mb-0 font-size-12">Преглед на личните данни от профил.</p>
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <a href="profile-edit.html" class="iq-sub-card iq-bg-primary-success-hover">
+                                    <div class="media align-items-center">
+                                       <div class="rounded iq-card-icon iq-bg-success">
+                                          <i class="ri-profile-line"></i>
+                                       </div>
+                                       <div class="media-body ml-3">
+                                          <h6 class="mb-0 ">Редактиране на профила</h6>
+                                          <p class="mb-0 font-size-12">Променете личните си данни.</p>
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <a href="account-setting.html" class="iq-sub-card iq-bg-primary-danger-hover">
+                                    <div class="media align-items-center">
+                                       <div class="rounded iq-card-icon iq-bg-danger">
+                                          <i class="ri-account-box-line"></i>
+                                       </div>
+                                       <div class="media-body ml-3">
+                                          <h6 class="mb-0 ">Настройки на профила</h6>
+                                          <p class="mb-0 font-size-12">Управлявайте параметрите на профила си.</p>
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <div class="d-inline-block w-100 text-center p-3">
+                                    <a class="iq-bg-danger iq-sign-btn" href="sign-in.html" role="button">Излизане от системата<i class="ri-login-box-line ml-2"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </nav>
+         </div>
+      </div>
+      <!-- TOP Nav Bar END -->
+      <!-- Page Content  -->
+      <!-- Right Sidebar Panel Start-->
+      <!-- Right Sidebar Panel End-->
+      <div id="content-page" class="content-page">
+         <div class="container-fluid">
+            <div class="row row-eq-height">
+               <!-- Content Top Banner Start -->
+               <div class="col-md-12 col-lg-8">
+                  <div class="iq-card bg-primary sb-top-banner-card iq-card-block iq-card-stretch iq-card-height">
+                     <div class="iq-card-body pt-5 pb-5">
+                        <div class="row">
+                           <div class="col-md-6 align-self-center">
+                              <h2 class="text-white">Добре Дошъл, User</h2>
+                              <p class="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. remaining essentially unchanged.</p>
+                           </div>
+                           <div class="col-md-6 position-relative">
+                              <div class="an-img-two">
+                                 <div class="bodymovin" data-bm-path="images/small/data1.json" data-bm-renderer="svg" data-bm-loop="true"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12 col-lg-4">
+                  <div class="iq-card iq-card-block iq-card-stretch iq-card-height-half">
+                     <div class="iq-card-body">
+                        <div class="row">
+                           <div class="col-lg-12">
+                              <span class="text-success float-right">+3.3%<i class="ri-arrow-up-fill"></i></span>
+                              <span class="font-size-14">New Signups</span>
+                              <h3>3,897</h3>
+                              <div class="iq-progress-bar-linear d-inline-block w-100 float-left mt-3">
+                                 <div class="iq-progress-bar">
+                                    <span class="bg-primary" data-percent="90"></span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="iq-card iq-card-block iq-card-stretch iq-card-height-half">
+                     <div class="iq-card-body">
+                        <div class="row">
+                           <div class="col-lg-12">
+                              <span class="text-danger float-right">+3.3%<i class="ri-arrow-down-fill"></i></span>
+                              <span class="font-size-14">Weekly Production</span>
+                              <h3>1,874 </h3>
+                              <div class="iq-progress-bar-linear d-inline-block w-100 float-left mt-3">
+                                 <div class="iq-progress-bar">
+                                    <span class="bg-danger" data-percent="90"></span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Content Top Banner End -->
+               <div class="col-md-12">
+                  <div class="row">
+                     <div class="col-md-12 col-lg-8">
+                        <div class="iq-card iq-card-block iq-card-stretch iq-card-height overflow-hidden wow fadeInUp" data-wow-delay="0.6s">
+                           <div class="iq-card-header d-flex justify-content-between">
+                              <div class="iq-header-title">
+                                 <h4 class="card-title">Overall Performance</h4>
+                              </div>
+                              <div class="iq-card-header-toolbar d-flex align-items-center">
+                                 <ul class="nav nav-pills">
+                                    <li class="nav-item">
+                                       <a href="#" class="nav-link active">All Time</a>
+                                    </li>
+                                    <li class="nav-item">
+                                       <a href="#" class="nav-link">This Year</a>
+                                    </li>
+                                    <li class="nav-item">
+                                       <a href="#" class="nav-link">This Week</a>
+                                    </li>
+                                    <li class="nav-item">
+                                       <a href="#" class="nav-link">Today</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="iq-card-body p-0">
+
+                              <div id="chart-11"></div>
+                           </div>
+                        </div>
+                  </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-12 col-lg-4">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                                 <div class="iq-card-body p-0">
+                                    <div class="row">
+                                       <div class="col-lg-4">
+                                          <div class="p-3">
+                                             <span class="text-secondary font-size-16">Servers</span>
+                                             <h3>1,125</h3>
+                                             <span class="text-success mt-3 d-inline-block w-100"><i class="ri-arrow-up-fill mr-1"></i>+3.3%</span>
+                                          </div>
+                                       </div>
+                                       <div class="col-lg-8 align-self-center">
+                                          <div id="chart-7"></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-md-12">
+                              <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                                 <div class="iq-card-body p-0">
+                                    <div class="row">
+                                       <div class="col-lg-4">
+                                          <div class="p-3">
+                                             <span class="text-secondary font-size-16">Utilization</span>
+                                             <h3>3,897</h3>
+                                             <span class="text-danger mt-3 d-inline-block w-100"><i class="ri-arrow-down-fill mr-1"></i>+10%</span>
+                                          </div>
+                                       </div>
+                                       <div class="col-lg-8 align-self-center">
+                                          <div id="chart-8"></div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-3 col-md-6">
+                        <div class="iq-card dash-hover-gradient iq-card-block iq-card-stretch iq-card-height">
+                           <div class="iq-card-header d-flex justify-content-between border-0">
+                              <div class="mb-0 font-size-32 text-dark"><i class="ri-home-4-line font-weight-light"></i></div>
+                              <div class="iq-card-header-toolbar d-flex align-items-center">
+                                 <div class="dropdown">
+                                    <span class="dropdown-toggle" id="d-28" data-toggle="dropdown">
+                                    <i class="ri-more-2-fill "></i>
+                                    </span>
+                                    <div class="dropdown-menu dropdown-menu-right shadow-none" aria-labelledby="dropdownMenuButton">
+                                       <a class="dropdown-item" href="#"><i class="ri-eye-fill mr-2"></i>View</a>
+                                       <a class="dropdown-item" href="#"><i class="ri-delete-bin-6-fill mr-2"></i>Delete</a>
+                                       <a class="dropdown-item" href="#"><i class="ri-pencil-fill mr-2"></i>Edit</a>
+                                       <a class="dropdown-item" href="#"><i class="ri-printer-fill mr-2"></i>Print</a>
+                                       <a class="dropdown-item" href="#"><i class="ri-file-download-fill mr-2"></i>Download</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="iq-card-body">
+                              <h3>Sales</h3>
+                              <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                           </div>
+                           <div class="card-action font-size-14 p-3">
+                              <span class="float-right">Tommorow</span>
+                              <i class="ri-timer-2-line"></i> 2:30pm
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-6">
+                        <div class="iq-card dash-hover-gradient iq-card-block iq-card-stretch iq-card-height">
+                           <div class="iq-card-header d-flex justify-content-between border-0">
+                              <div class="mb-0 font-size-32 text-dark"><i class="ri-timer-line font-weight-light"></i></div>
+                              <div class="iq-card-header-toolbar d-flex align-items-center">
+                                 <div class="dropdown">
+                                    <span class="dropdown-toggle" id="d-29" data-toggle="dropdown">
+                                    <i class="ri-more-2-fill "></i>
+                                    </span>
+                                    <div class="dropdown-menu dropdown-menu-right shadow-none" aria-labelledby="dropdownMenuButton">
+                                       <a class="dropdown-item" href="#"><i class="ri-eye-fill mr-2"></i>View</a>
+                                       <a class="dropdown-item" href="#"><i class="ri-delete-bin-6-fill mr-2"></i>Delete</a>
+                                       <a class="dropdown-item" href="#"><i class="ri-pencil-fill mr-2"></i>Edit</a>
+                                       <a class="dropdown-item" href="#"><i class="ri-printer-fill mr-2"></i>Print</a>
+                                       <a class="dropdown-item" href="#"><i class="ri-file-download-fill mr-2"></i>Download</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="iq-card-body">
+                              <h3>Support</h3>
+                              <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                           </div>
+                           <div class="card-action font-size-14 p-3">
+                              <span class="float-right">Tommorow</span>
+                              <i class="ri-timer-2-line"></i> 2:30pm
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-6">
+                        <div class="iq-card dash-hover-gradient iq-card-block iq-card-stretch iq-card-height">
+                           <div class="iq-card-header d-flex justify-content-between border-0">
+                               <div class="mb-0 font-size-32 text-dark"><i class="ri-account-box-line font-weight-light"></i></div>
+                              <div class="iq-card-header-toolbar d-flex align-items-center">
+                                 <div class="dropdown">
+                                    <span class="dropdown-toggle" id="d-27" data-toggle="dropdown">
+                                    <i class="ri-more-2-fill "></i>
+                                    </span>
+                                    <div class="dropdown-menu dropdown-menu-right shadow-none" aria-labelledby="dropdownMenuButton">
+                                       <a class="dropdown-item" href="#"><i class="ri-eye-fill mr-2"></i>View</a>
+                                       <a class="dropdown-item" href="#"><i class="ri-delete-bin-6-fill mr-2"></i>Delete</a>
+                                       <a class="dropdown-item" href="#"><i class="ri-pencil-fill mr-2"></i>Edit</a>
+                                       <a class="dropdown-item" href="#"><i class="ri-printer-fill mr-2"></i>Print</a>
+                                       <a class="dropdown-item" href="#"><i class="ri-file-download-fill mr-2"></i>Download</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="iq-card-body">
+                              <h3>Account</h3>
+                              <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                           </div>
+                           <div class="card-action font-size-14 p-3">
+                              <span class="float-right">Tommorow</span>
+                              <i class="ri-timer-2-line"></i> 2:30pm
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-6">
+                        <div class="iq-card dash-hover-blank d-flex align-items-center iq-card-block iq-card-stretch iq-card-height">
+                           <div class="iq-card-body text-center">
+                              <h5 class="">Add New Project</h5>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+      <!-- Wrapper END -->
+      <!-- Footer -->
+      <footer class="bg-white iq-footer">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-lg-6">
+               </div>
+               <div class="col-lg-6 text-right">
+                  Copyright 2024 <a href="#">VUniverse</a> All Rights Reserved.
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Footer END -->
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Appear JavaScript -->
+      <script src="js/jquery.appear.js"></script>
+      <!-- Countdown JavaScript -->
+      <script src="js/countdown.min.js"></script>
+      <!-- Counterup JavaScript -->
+      <script src="js/waypoints.min.js"></script>
+      <script src="js/jquery.counterup.min.js"></script>
+      <!-- Wow JavaScript -->
+      <script src="js/wow.min.js"></script>
+      <!-- Apexcharts JavaScript -->
+      <script src="js/apexcharts.js"></script>
+      <!-- Slick JavaScript -->
+      <script src="js/slick.min.js"></script>
+      <!-- Select2 JavaScript -->
+      <script src="js/select2.min.js"></script>
+      <!-- Owl Carousel JavaScript -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- Magnific Popup JavaScript -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- Smooth Scrollbar JavaScript -->
+      <script src="js/smooth-scrollbar.js"></script>
+      <!-- lottie JavaScript -->
+      <script src="js/lottie.js"></script>
+      <!-- Chart Custom JavaScript -->
+      <script src="js/chart-custom.js"></script>
+      <!-- Custom JavaScript -->
+      <script src="js/custom.js"></script>
+   </body>
+</html>
